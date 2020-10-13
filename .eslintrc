@@ -1,0 +1,10 @@
+{
+  "extends": "cmap",
+  "globals": {
+      "describe":true,
+      "it":true,
+      "expect":true
+  },
+  "rules": {
+  }
+}

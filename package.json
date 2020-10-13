@@ -1,0 +1,24 @@
+{
+  "name": "expect-cmap",
+  "version": "0.0.1",
+  "description": "A plugin of expect.js(https://github.com/Automattic/expect.js) for cmap with assertions for Coordinate/GeoJSON/Layer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thiswildidea/expect-cmap.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint *.js test/**/*.js",
+    "test": "./node_modules/.bin/mocha",
+    "pretest": "npm run lint"
+  },
+  "devDependencies": {
+    "eslint": "^2.4.0",
+    "eslint-config-cmap": "^0.2.1",
+    "mocha": "^2.4.5"
+  },
+  "peerDependencies": {
+    "expect.js": "^0.3.1"
+  }
+}
