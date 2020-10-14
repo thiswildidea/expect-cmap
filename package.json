@@ -1,11 +1,11 @@
 {
-  "name": "expect-cmap",
+  "name": "expect-maplab",
   "version": "0.0.1",
-  "description": "A plugin of expect.js(https://github.com/Automattic/expect.js) for cmap with assertions for Coordinate/GeoJSON/Layer",
+  "description": "A plugin of expect.js(https://github.com/Automattic/expect.js) for maplab with assertions for Coordinate/GeoJSON/Layer",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thiswildidea/expect-cmap.git"
+    "url": "https://github.com/thiswildidea/expect-maplab.git"
   },
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "eslint": "^2.4.0",
-    "eslint-config-cmap": "^0.0.1",
+    "eslint-config-maplab": "^0.0.1",
     "mocha": "^2.4.5"
   },
   "peerDependencies": {

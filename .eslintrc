@@ -1,5 +1,5 @@
 {
-  "extends": "cmap",
+  "extends": "maplab",
   "globals": {
       "describe":true,
       "it":true,

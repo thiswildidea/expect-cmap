@@ -1,31 +1,31 @@
-# expect-cmap
+# expect-maplab
 
-[![Circle CI](https://circleci.com/gh/cmap/expect-cmap.svg?style=shield)](https://circleci.com/gh/cmap/expect-cmap)
+[![Circle CI](https://circleci.com/gh/maplab/expect-maplab.svg?style=shield)](https://circleci.com/gh/maplab/expect-maplab)
 
-A plugin of expect.js(https://github.com/Automattic/expect.js) for cmap with assertions for Coordinate/GeoJSON/Layer
+A plugin of expect.js(https://github.com/Automattic/expect.js) for maplab with assertions for Coordinate/GeoJSON/Layer
 
 ## Usage
 
 ```bash
-npm install expect-cmap --save-dev
+npm install expect-maplab --save-dev
 ```
 
 ### with Karma
-Install [karma-expect-cmap](https://github.com/thiswildidea/karma-expect-cmap)
+Install [karma-expect-maplab](https://github.com/thiswildidea/karma-expect-maplab)
 ```bash
-npm install karma-expect-cmap --save-dev
+npm install karma-expect-maplab --save-dev
 ```
-In karma.conf.js, Attention: **always declare expect-cmap behind expect**
+In karma.conf.js, Attention: **always declare expect-maplab behind expect**
 ```javascript
     frameworks: [
       'mocha',
       'expect',
-      'expect-cmap'
+      'expect-maplab'
     ],
     
     plugins: [
       'karma-expect',
-      'karma-expect-cmap'
+      'karma-expect-maplab'
     ],
 ```
 
@@ -57,7 +57,7 @@ expect({ "type": "Point", "coordinates": [0.0, 0.0] })
 **painted**: asserts the given layer or map is painted in the center with a offset.
 
 ```js
-var v = new cmap.VectorLayer('v').addGeometries(geos).addTo(map);
+var v = new maplab.VectorLayer('v').addGeometries(geos).addTo(map);
 //asserts layer is painted in the center
 expect(v).to.be.painted();
 //whether the layer is painted with an offset {x:5, y:3} from the center.
